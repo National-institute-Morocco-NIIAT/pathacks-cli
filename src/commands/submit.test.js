@@ -10,7 +10,7 @@ jest.mock('../util/prompt')
 jest.mock('../util/boxen')
 jest.mock('../util/git')
 
-describe('c0d3 submit', () => {
+describe('pathacks submit', () => {
   const lessons = [
     {
       id: '5',

@@ -19,17 +19,17 @@ const program = {
 createCommand.mockReturnValue(program)
 const { init } = require('./cli')
 
-describe('CLI c0d3', () => {
-  test('Should run c0d3', () => {
+describe('CLI pathacks', () => {
+  test('Should run pathacks', () => {
     expect(createCommand).toHaveBeenCalled()
   })
 
-  test('Should run c0d3 --help', () => {
+  test('Should run pathacks --help', () => {
     init()
     expect(program.help).toHaveBeenCalled()
   })
 
-  test('Should not run c0d3 --help', () => {
+  test('Should not run pathacks --help', () => {
     program.args = ['submit']
     program.help = jest.fn()
     init()

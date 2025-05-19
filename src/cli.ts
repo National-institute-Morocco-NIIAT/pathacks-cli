@@ -31,9 +31,9 @@ export const init = (): void => {
   // List Options
   program
     .version(
-      `c0d3 cli version: ${bold.magenta(pkg.version)}`,
+      `pathacks cli version: ${bold.magenta(pkg.version)}`,
       undefined,
-      'Show the c0d3 cli version'
+      'Show the pathacks cli version'
     )
     .helpOption(undefined, 'Display help menu').usage(`[options]
 

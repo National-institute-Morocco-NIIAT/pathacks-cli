@@ -4,7 +4,7 @@ import { saveToken } from '../util/credentials'
 jest.mock('../util/prompt')
 jest.mock('../util/credentials')
 
-describe('c0d3 login', () => {
+describe('pathacks login', () => {
   test('should not throw error', async () => {
     const res = await login({ url: 'fakeUrl' })
     expect(res).toBe(undefined)

@@ -9,8 +9,8 @@ jest.mock('fs', () => {
   }
 })
 
-describe('c0d3 logout', () => {
-  test('Should delete .c0d3 folder', () => {
+describe('pathacks logout', () => {
+  test('Should delete .pathacks folder', () => {
     fsPromises.rmdir.mockResolvedValue()
     expect(logout()).resolves.toBe(undefined)
     expect(fsPromises.rmdir).toBeCalled()

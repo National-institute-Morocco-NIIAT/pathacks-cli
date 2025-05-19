@@ -18,42 +18,42 @@
 ## Installation
 
 ```bash
-  $ npm install --global c0d3
+  $ npm install --global pathacks
 ```
 
 ## Login
 ```bash
-  $ c0d3 login | l
+  $ pathacks login | l
 ```
 
 ## Submit
 ```bash
-  $ c0d3 submit | s
+  $ pathacks submit | s
 ```
 
 ## Logout
 ```bash
-  $ c0d3 logout
+  $ pathacks logout
 ```
 
 ## Version
 ```bash
-  $ c0d3 --version | -V
+  $ pathacks --version | -V
 ```
 
 ## Help Menu
 ```bash
-  $ c0d3 help
+  $ pathacks help
 ```
 
 ## Contributing
 **CLI options:**
 
-  - c0d3 submit:
+  - pathacks submit:
     - `--url "http://YOUR_DEV_SERVER"` To point to another graphQL endpoint
     - `--debug | -d` To use a test account token instead of you personnal account
 
-  - c0d3 login: 
+  - pathacks login: 
     - `--url "http://YOUR_DEV_SERVER"` To point to another graphQL endpoint
 
 **Paradigme:**

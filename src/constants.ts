@@ -3,7 +3,7 @@ import { homedir } from 'os'
 
 const HOME = homedir()
 
-const DIR = '.c0d3'
+const DIR = '.pathacks'
 
 const CREDENTIAL_FILE = 'credentials.json'
 

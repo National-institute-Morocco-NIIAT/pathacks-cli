@@ -22,7 +22,7 @@ export const NOT_MASTER = `Hey, You checked out from the wrong branch! You shoul
 export const FAILED_GET_LASTCHECKOUT = `Failed to find if the branch was checked out from Master,
 please either create an issue on ${bold.magenta(
   'https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/issues'
-)} or on our Discord server C0D3 on ${bold.magenta(
+)} or on our Discord server pathacks on ${bold.magenta(
   'https://discord.gg/MJ4PS4dK6J'
 )}\n`
 
@@ -75,7 +75,7 @@ export const SUBMISSION_SUCCEED = bold.green(
 
 export const NOT_LOGGED_IN = `${bold.red('You are currently not logged in.')}\n
 Please run ${bold.magenta(
-  'c0d3 login'
-)} to login first, then run ${bold.magenta('c0d3 submit')}.\n`
+  'pathacks login'
+)} to login first, then run ${bold.magenta('pathacks submit')}.\n`
 
 export const LOGOUT_ERROR = bold.red('The logout has failed.\n')
