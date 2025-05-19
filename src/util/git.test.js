@@ -17,22 +17,22 @@ jest.mock('simple-git/promise', () =>
     return {
       branch: jest
         .fn()
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'master' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' })
-        .mockResolvedValueOnce({ current: 'notMaster' }),
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'main' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' })
+        .mockResolvedValueOnce({ current: 'notMain' }),
 
       diff: jest
         .fn()
@@ -89,14 +89,14 @@ jest.mock('simple-git/promise', () =>
         .fn()
         .mockResolvedValueOnce(
           `
-        7abfefd HEAD@{0}: checkout: moving from master to branch2
-        7abfefd HEAD@{1}: checkout: moving from branch2 to master
+        7abfefd HEAD@{0}: checkout: moving from main to branch2
+        7abfefd HEAD@{1}: checkout: moving from branch2 to main
         `
         )
         .mockResolvedValueOnce(
           `
         7abfefd HEAD@{0}: checkout: moving from branch3 to branch2
-        7abfefd HEAD@{1}: checkout: moving from branch2 to master
+        7abfefd HEAD@{1}: checkout: moving from branch2 to main
         `
         )
         .mockResolvedValueOnce(``)

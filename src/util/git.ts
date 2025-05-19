@@ -124,7 +124,7 @@ export const getDiffAgainstMaster = async (
   challengeOrder: number
 ): Promise<DiffObject> => {
   const { current } = await git.branch()
-  if (current === 'master') throw new Error(WRONG_BRANCH)
+  if (current === 'main') throw new Error(WRONG_BRANCH)
   console.log(`${CURRENT_BRANCH} ${current}\n`)
 
   // Files to exclude relative to git root
