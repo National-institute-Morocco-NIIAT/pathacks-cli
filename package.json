@@ -20,7 +20,7 @@
     "dev": "ts-node src/cli.ts",
     "autofix": "eslint . --ext .ts --fix",
     "type-check": "tsc",
-    "build": "tsc -p .",
+    "build": "tsc -p . && chmod +x ./dist/src/cli.js",
     "test": "jest --coverage --silent"
   },
   "author": "pathacks.com",
