@@ -37,7 +37,7 @@ const didCheckoutFromMaster = async () => {
 
   if (!splitLastCheckoutMove) return FAILED_GET_LASTCHECKOUT
 
-  return splitLastCheckoutMove[0].trim() === 'master'
+  return splitLastCheckoutMove[0].trim() === 'main'
 }
 
 const predictValidFile = (matchWith: string | RegExp) => (e: string) =>
@@ -133,7 +133,7 @@ export const getDiffAgainstMaster = async (
   )
 
   const changedFilesString = await git.diff([
-    `master..${current}`,
+    `main..${current}`,
     '--diff-filter=d',
     '--name-only',
     ...ignoreFileOptions,
@@ -151,11 +151,11 @@ export const getDiffAgainstMaster = async (
   const [display, db] = await Promise.all([
     git.diff([
       `--color`,
-      `master..${current}`,
+      `main..${current}`,
       '--diff-filter=d',
       ...ignoreFileOptions,
     ]),
-    git.diff([`master..${current}`, '--diff-filter=d', ...ignoreFileOptions]),
+    git.diff([`main..${current}`, '--diff-filter=d', ...ignoreFileOptions]),
   ])
 
   return {

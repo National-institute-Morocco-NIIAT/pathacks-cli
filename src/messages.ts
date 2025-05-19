@@ -3,14 +3,14 @@ import { bold } from 'chalk'
 export const CURRENT_BRANCH = bold.magenta('\nYou are currently on branch: ')
 
 export const NO_DIFFERENCE = `There are ${bold.red('no differences ')}
-in your current branch from your master branch.\n`
+in your current branch from your main branch.\n`
 
 export const DIFF_MSG = bold.magenta(
-  '\nDifferences from your current branch to master:\n\n'
+  '\nDifferences from your current branch to main:\n\n'
 )
 
 export const WRONG_BRANCH = `Submissions must come from branches that are ${bold.red(
-  'not master. '
+  'not main.'
 )}
 Please make sure that you branch, add, commit, and submit correctly.\n`
 
@@ -19,7 +19,7 @@ export const NOT_MASTER = `Hey, You checked out from the wrong branch! You shoul
    'https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/wiki/Students-issues#checked-out-from-a-branch-other-than-master'
  )}\n`
 
-export const FAILED_GET_LASTCHECKOUT = `Failed to find if the branch was checked out from Master,
+export const FAILED_GET_LASTCHECKOUT = `Failed to find if the branch was checked out from Main,
 please either create an issue on ${bold.magenta(
   'https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/issues'
 )} or on our Discord server pathacks on ${bold.magenta(
