@@ -37,13 +37,13 @@ export const init = (): void => {
     )
     .helpOption(undefined, 'Display help menu').usage(`[options]
 
-  ${bold.magenta('A command line interface (CLI) for c0d3.com')}`)
+  ${bold.magenta('A command line interface (CLI) for pathacks.com')}`)
 
   // List Commands
   program
     .command('submit')
     .alias('s')
-    .description('Submit git diff of challenge to c0d3.com')
+    .description('Submit git diff of challenge to pathacks.com')
     .option('--url <url> ', 'Set url endpoint for http request', URL)
     .option('-d, --debug')
     .action(submit)
@@ -51,13 +51,13 @@ export const init = (): void => {
   program
     .command('login')
     .alias('l')
-    .description('Login to your c0d3.com account')
+    .description('Login to your pathacks.com account')
     .option('--url <url> ', 'Set url endpoint for http request', URL)
     .action(login)
 
   program
     .command('logout')
-    .description('Logout to your c0d3.com account')
+    .description('Logout to your pathacks.com account')
     .action(logout)
 
   program.parse(process.argv)

@@ -16,12 +16,12 @@ Please make sure that you branch, add, commit, and submit correctly.\n`
 
 export const NOT_MASTER = `Hey, You checked out from the wrong branch! You should checkout from master.\n
  Here's a link to solve this problem: ${bold.magenta(
-   'https://github.com/garageScript/c0d3-cli/wiki/Students-issues#checked-out-from-a-branch-other-than-master'
+   'https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/wiki/Students-issues#checked-out-from-a-branch-other-than-master'
  )}\n`
 
 export const FAILED_GET_LASTCHECKOUT = `Failed to find if the branch was checked out from Master,
 please either create an issue on ${bold.magenta(
-  'https://github.com/garageScript/c0d3-cli/issues'
+  'https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/issues'
 )} or on our Discord server C0D3 on ${bold.magenta(
   'https://discord.gg/MJ4PS4dK6J'
 )}\n`
@@ -52,7 +52,7 @@ export const UNSUPPORTED_GRAPHQL_REQUEST = bold.red(
 )
 
 export const UNHANDLED_ERROR = bold.red(
-  'Unhandled error. Please create an issue about it with a way to reproduce it in https://github.com/garageScript/c0d3-cli/issues'
+  'Unhandled error. Please create an issue about it with a way to reproduce it in https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/issues'
 )
 
 export const SAVE_TOKEN_ERROR = bold.red(

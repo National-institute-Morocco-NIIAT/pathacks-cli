@@ -37,8 +37,8 @@ ${files.reduce((acc, file) => `${acc}- ${file}\n`, '')}
 
 ${bold.cyan('If there is, you can solve it by following the links below:')}
 ${bold.magenta(`
-- https://www.c0d3.com/docs/setup#reusing-your-branches
-- https://github.com/garageScript/c0d3-cli/wiki/Students-issues#checked-out-from-a-branch-other-than-master`)}
+- https://www.pathacks.com/docs/setup#reusing-your-branches
+- https://github.com/National-institute-Morocco-NIIAT/pathacks-cli/wiki/Students-issues#checked-out-from-a-branch-other-than-master`)}
 
 ${bold.magenta(
   `If the links above didn't help, please reach on Discord (https://discord.gg/MJ4PS4dK6J)!`

@@ -1,10 +1,10 @@
 <h1 align="center">
   <br>
-  c0d3.com
+  pathacks.com
   <br>
 </h1>
 
-<h4 align="center">A command line tool for <a href="https://c0d3.com" target="_blank">c0d3.com</a> challenge submissions.</h4>
+<h4 align="center">A command line tool for <a href="https://pathacks.com" target="_blank">pathacks.com</a> challenge submissions.</h4>
 
 <p align="center">
   <a href="#installation">Installation</a> |
